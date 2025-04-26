@@ -11,9 +11,6 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
 
-  <!-- Font -->
-  <link href="@@vars.themeFont" rel="stylesheet">
-
   <!-- CSS Implementing Plugins -->
   <!-- bundlecss:vendor [@@autopath] -->
   <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -35,46 +32,93 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-      <!-- Thumbs Slider -->
-      <div class="">
-        <div class="">
-          <!-- Slide -->
-          <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/servicios/digital/bkg006.jpg);">
-            <div class="card-title d-flex align-items-center position-relative content-space-2">
-              <div class="container content-space-2">
-                <div class="row align-items-md-center">
-                  <div class="col-md-6">
-                  </div>
-                  <div class="col-md-6 pt-5 pb-5">
-                    <h2 class="card-title text-black pt-3 pb-2">Traducciones digitales para todo tipo de documentos físicos o electrónicos</h2>
-                    <p class="pt-1 pb-3">Solicítela en nuestra oficina, por teléfono o en línea hoy.</p>
-                    <a   class="btn btn-primary mt-5 mb-5 px-5 py-3 fs-4"   target="_blank"   href="@@autopath/landing-classic-corporate.html" >  Empiece ahora <i class="bi-box-arrow-up-right ms-2 fs-4"></i></a>
-                  </div>                  
-                  <!-- End Col -->
-                </div>
-                <!-- End Row -->
+  
+    <div class="d-lg-flex position-relative">
+      <div class="container d-lg-flex align-items-lg-center content-space-t-3 content-space-lg-0 min-vh-lg-100">
+        <!-- Heading -->
+        <div class="w-100">
+          <div class="row justify-content-lg-end">
+            <div class="col-lg-6">
+              <div class="mb-5">
+                <h1 class="display-4 mb-3">
+                  Traducciones digitales para todo tipo de documentos físicos o electrónicos
+                  <span class="text-primary text-highlight-warning">
+                    <span class="js-typedjs"
+                          data-hs-typed-options='{
+                            "strings": ["startup.", "future.", "success."],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'></span>
+                  </span>
+                </h1>
+                <p class="lead">Solicítela en nuestra oficina, por teléfono o en línea hoy.</p>
+              </div>    
+              <div class="d-grid d-sm-flex gap-3">
+                <a class="btn btn-primary mt-5 mb-5 px-5 py-3 fs-4"   target="_blank"   href="@@autopath/landing-classic-corporate.html" >  Empiece ahora <i class="bi-box-arrow-up-right ms-2 fs-4"></i></a>
               </div>
-              
-              <!-- End Col -->
             </div>
+            <!-- End Col -->
           </div>
-          <!-- End Slide -->  
+          <!-- End Row -->
         </div>
+        <!-- End Title & Description -->
+    
+        <!-- SVG Shape (Izquierda) - Versión ajustada -->
+        <div class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 start-0 ps-0" style="left: 0 !important;">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1137.5 979.2" style="margin-left: -1px;">
+            <defs>
+              <path id="mainHeroSVGLeft1" d="M0,0h687.1l278,279.7c150,150.9,98.1,395.3-54.4,543.8l0,0C791.6,960,570.8,968.7,420.3,843.6L0,470.2V0z"/>
+            </defs>
+            <clipPath id="mainHeroSVGLeft2">
+              <use xlink:href="#mainHeroSVGLeft1"/>
+            </clipPath>
+            <g transform="matrix(1 0 0 1 -1 0)" clip-path="url(#mainHeroSVGLeft2)">
+              <image width="800" height="800" xlink:href="@@autopath/assets/img/servicios/digital/bkg0062.jpg" transform="matrix(1.5 0 0 1.5 0 0)"></image>
+            </g>
+          </svg>
+        </div>
+        <!-- End SVG Shape -->
       </div>
-
+    </div>
+   
       <div class="">
         <div class="">
           <!-- Slide -->
           <div class="sbg-img-start bg-img-start">
             <div class="d-flex align-items-center position-relative">
-              <div class="container content-space-2">
+              <div class="container content-space-1">
                 <div class="row align-items-md-center">
                   <div class="col-md-6">
                     <img src="@@autopath/assets/img/servicios/digital/img01.png" class="d-block w-85 mx-auto" alt="Imagen 1">
                   </div>
                   <div class="col-md-6 pt-5 pb-5">
-                    <h3 class="text-primary pt-3 pb-2 display-6">Presentación de la traducción digital</h3>
-                    <p class="pt-1 pb-3">La traducción digital es una traducción simple en formato electrónico (Documento de Office: Word, Excel, etc.) y es entregada de manera adjunta por correo electrónico. Puede aplicarse para traducir documentos en físico como Currículum Vitae, cartas, artículos, solicitudes, como en documentos de Office o en formato PDF. Este tipo de traducción no tiene certificación alguna ni datos del traductor certificado.</p>
+                    <h3 class="text-primary pt-3 pb-2 display-6" data-aos="fade-up">Presentación de la traducción digital</h3>                    
+                    <div class="d-flex mb-3" data-aos="fade-up" data-aos-delay="150">
+                      <div class="me-4">
+                        <div class="icon icon-xs icon-shape bg-soft-primary text-primary rounded-circle">
+                          <i class="bi bi-file-earmark-text-fill"></i>
+                        </div>
+                      </div>
+                      <p class="mb-0">Traducción simple en formato electrónico (Word, Excel, etc.) entregada por correo electrónico.</p>
+                    </div>
+                    <div class="d-flex mb-3" data-aos="fade-up" data-aos-delay="175">
+                      <div class="me-4">
+                        <div class="icon icon-xs icon-shape bg-soft-primary text-primary rounded-circle">
+                          <i class="bi bi-filetype-pdf"></i>
+                        </div>
+                      </div>
+                      <p class="mb-0">Aplicable para documentos físicos o digitales (CV, cartas, artículos, solicitudes).</p>
+                    </div>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                      <div class="me-4">
+                        <div class="icon icon-xs icon-shape bg-soft-warning text-warning rounded-circle">
+                          <i class="bi bi-exclamation-triangle-fill"></i>
+                        </div>
+                      </div>
+                      <p class="mb-0"><strong>Importante:</strong> Este servicio no incluye certificación ni datos del traductor.</p>
+                    </div>  
                   </div>                  
                   <!-- End Col -->
                 </div>
@@ -333,7 +377,7 @@
   @@include("@@autopath/partials/layouts-components/go-to.html")
 
   <!-- Cookie Alert -->
-  @@include("@@autopath/partials/layouts-components/cookie-alert.html")
+    <!-- Cookie  @@include("@@autopath/partials/layouts-components/cookie-alert.html") -->
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- JS Global Compulsory @@deleteLine:build -->
@@ -346,6 +390,7 @@
   <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
   <script src="@@autopath/node_modules/swiper/swiper-bundle.min.js"></script>
 
   <!-- JS Front -->
@@ -353,6 +398,7 @@
   <script src="@@autopath/assets/js/hs.core.js"></script>
   <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
   <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+  <script src="@@autopath/assets/js/hs.typed.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -404,82 +450,47 @@
       });
 
 
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      HSCore.components.HSTyped.init('.js-typedjs')
+
+
       // INITIALIZATION OF SWIPER
       // =======================================================
-      let activeIndex = 0
       var sliderThumbs = new Swiper('.js-swiper-thumbs', {
-        slidesPerView: 1,
-        autoplay: false,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        followFinger: false,
-        loop: true,
+        history: false,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
         on: {
-          'slideChangeTransitionEnd': function (event) {
-            if (sliderMain === undefined) return
-            sliderMain.slideTo(event.activeIndex)
+          'afterInit': function (swiper) {
+            swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
+            .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
           }
         }
       });
 
       var sliderMain = new Swiper('.js-swiper-main', {
         effect: 'fade',
-        autoplay: false,
-        disableOnInteraction: true,
+        autoplay: true,
         loop: true,
-        navigation: {
-          nextEl: '.js-swiper-main-button-next',
-          prevEl: '.js-swiper-main-button-prev',
-        },
         thumbs: {
           swiper: sliderThumbs
-        },
-        on: {
-          'slideChangeTransitionEnd': function (event) {
-            if (sliderThumbs === undefined) return
-            sliderThumbs.slideTo(event.activeIndex)
-          }
         }
       })
-
-      // Clients
-      var swiper = new Swiper('.js-swiper-clients',{
-        slidesPerView: 2,
-        breakpoints: {
-          380: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 15,
-          },
-        },
-      });
-
-      // Card Grid
-      var swiper = new Swiper('.js-swiper-card-blocks',{
-        slidesPerView: 1,
-        pagination: {
-          el: '.js-swiper-card-blocks-pagination',
-          dynamicBullets: true,
-          clickable: true,
-        },
-        breakpoints: {
-          620: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-        },
-      });
     })()
   </script>
 </body>
