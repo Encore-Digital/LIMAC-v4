@@ -27017,3 +27017,12 @@ a:hover .text-inherit {
     margin-right: 0 !important;
   }
 }
+
+.logo_create{
+  font-size: 3.5em;
+  letter-spacing: -4.5px;
+  line-height: inherit;
+  text-shadow: 0px 2px 1px rgb(0 0 0 / 40%), 0px 4px 2px rgb(0 0 0 / 10%), 0px 6px 3px rgb(0 0 0 / 10%);
+  color: #377dff;
+  font-family: 'Maven Pro', sans-serif;
+}
