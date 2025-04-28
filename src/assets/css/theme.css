@@ -3289,12 +3289,12 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  --bs-btn-color: #377dff;
-  --bs-btn-bg: #ffffffc0;
-  --bs-btn-border-color: #ffffffc0;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #21325b;
+  --bs-btn-border-color: #21325b;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #377dff;
-  --bs-btn-hover-border-color: #377dff;
+  --bs-btn-hover-bg: rgb(66.3, 80.75, 115.6);
+  --bs-btn-hover-border-color: rgb(55.2, 70.5, 107.4);
   --bs-btn-focus-shadow-rgb: 66, 81, 116;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: rgb(77.4, 91, 123.8);
@@ -27006,9 +27006,6 @@ a:hover .text-inherit {
   margin-top: 0.5rem;
 }
 
-/*------------------------------------
-  File for your custom SCSS style
-------------------------------------*/
 
 @media (max-width: 991px) {
   .hs-mega-menu.dropdown-menu .row {
@@ -27026,3 +27023,8 @@ a:hover .text-inherit {
   color: #fff;
   font-family: 'Maven Pro', sans-serif;
 }
+
+
+/*------------------------------------
+  File for your custom SCSS style
+------------------------------------*/
