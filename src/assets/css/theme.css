@@ -3289,12 +3289,12 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #21325b;
-  --bs-btn-border-color: #21325b;
+  --bs-btn-color: #377dff;
+  --bs-btn-bg: #ffffffc0;
+  --bs-btn-border-color: #ffffffc0;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(66.3, 80.75, 115.6);
-  --bs-btn-hover-border-color: rgb(55.2, 70.5, 107.4);
+  --bs-btn-hover-bg: #377dff;
+  --bs-btn-hover-border-color: #377dff;
   --bs-btn-focus-shadow-rgb: 66, 81, 116;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: rgb(77.4, 91, 123.8);
@@ -21616,7 +21616,7 @@ label.form-control,
   box-shadow: 0rem 0.375rem 1.5rem 0rem rgba(140, 152, 164, 0.125);
 }
 .navbar.navbar-scrolled.navbar-dark {
-  background-color: #21325b;
+  background-color: #377dff;
 }
 
 .navbar-brand {
@@ -27019,10 +27019,10 @@ a:hover .text-inherit {
 }
 
 .logo_create{
-  font-size: 3.5em;
+  font-size: 3em;
   letter-spacing: -4.5px;
   line-height: inherit;
   text-shadow: 0px 2px 1px rgb(0 0 0 / 40%), 0px 4px 2px rgb(0 0 0 / 10%), 0px 6px 3px rgb(0 0 0 / 10%);
-  color: #377dff;
+  color: #fff;
   font-family: 'Maven Pro', sans-serif;
 }
