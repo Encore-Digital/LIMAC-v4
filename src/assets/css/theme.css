@@ -27009,3 +27009,11 @@ a:hover .text-inherit {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+@media (max-width: 991px) {
+  .hs-mega-menu.dropdown-menu .row {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
