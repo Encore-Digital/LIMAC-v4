@@ -12,7 +12,8 @@
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
 
   <!-- Font -->
-  <link href="@@vars.themeFont" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
 
   <!-- CSS Implementing Plugins -->
   <!-- bundlecss:vendor [@@autopath] -->
@@ -90,35 +91,123 @@
     </div>
     <!-- Swiper Slider -->
 
-    <div class="">
-        <div class="">
-          <!-- Slide -->
-          <div class="sbg-img-start bg-img-start" style="background-image: url(@@autopath/assets/img/nosotros/bkg016.jpg);">
-            <div class="d-flex align-items-center position-relative">
-              <div class="container content-space-2">
-                <div class="row align-items-md-center">
-                  <div class="col-md-6 px-sm-4">
-                    <h2 class="card-title text-white pt-3 pb-2">Visión</h2>
-                    <p class="text-white pt-1 pb-3">Consolidarnos como empresa líder en Perú, y ser el proveedor preferido de productos y servicios de alta calidad.</p>
-                    <h2 class="card-title text-white pt-3 pb-2">Misión</h2>
-                    <p class="text-white pt-1 pb-3">Contribuir a la productividad de nuestros clientes ofreciendo productos y servicios innovadores, competitivos, y rentables.</p>
-                    <h2 class="card-title text-white pt-3 pb-2">Valores</h2>
-                    <p class="text-white pt-1 pb-3">Profesionalismo, transparencia, puntualidad, excelencia, innovación.</p>
-                  </div>
-                  <div class="col-md-6 pt-2 pb-2">
-                  </div>                  
-                  <!-- End Col -->
-                </div>
-                <!-- End Row -->
-              </div>
-              
-              <!-- End Col -->
-            </div>
-          </div>
-          <!-- End Slide -->  
-        </div>
-    </div>
+<div class="container content-space-1">
+  <div class="row align-items-lg-center">
+    <!-- Columna de la lista  -->
+    <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
+      <!-- Nav Scroller -->
+      <div class="js-nav-scroller hs-nav-scroller-horizontal">
+        <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+          <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+            <i class="bi-chevron-left"></i>
+          </a>
+        </span>
 
+        <span class="hs-nav-scroller-arrow-next" style="display: none;">
+          <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+            <i class="bi-chevron-right"></i>
+          </a>
+        </span>
+        
+        <!-- Nav Pills -->
+        <ul class="nav nav-lg nav-pills nav-pills-shadow flex-lg-column gap-lg-1 p-3" id="featuresTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true" style="min-width: 20rem;">
+              <!-- Media -->
+              <div class="d-flex align-items-center align-items-lg-start">
+                <span class="svg-icon svg-icon-sm text-primary">
+                  @@include("@@autopath/assets/vendor/duotone-icons/art/art006.svg")
+                </span>
+
+                <div class="flex-grow-1 ms-3">
+                  <h4 class="mb-1">Visión</h4>
+                  <p class="text-body text-wrap mb-0">Consolidarnos como empresa líder en Perú, y ser el proveedor preferido de productos y servicios de alta calidad.</p>
+                </div>
+              </div>
+              <!-- End Media -->
+            </a>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false" style="min-width: 20rem;">
+              <!-- Media -->
+              <div class="d-flex align-items-center align-items-lg-start">
+                <span class="svg-icon svg-icon-sm text-primary">
+                  @@include("@@autopath/assets/vendor/duotone-icons/gen/gen022.svg")
+                </span>
+
+                <div class="flex-grow-1 ms-3">
+                  <h4 class="mb-1">Misión</h4>
+                  <p class="text-body text-wrap mb-0">Contribuir a la productividad de nuestros clientes ofreciendo productos y servicios innovadores, competitivos, y rentables.</p>
+                </div>
+              </div>
+              <!-- End Media -->
+            </a>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false" style="min-width: 20rem;">
+              <!-- Media -->
+              <div class="d-flex align-items-center align-items-lg-start">
+                <span class="svg-icon svg-icon-sm text-primary">
+                  @@include("@@autopath/assets/vendor/duotone-icons/cod/cod011.svg")
+                </span>
+
+                <div class="flex-grow-1 ms-3">
+                  <h4 class="mb-1">Valores</h4>
+                  <p class="text-body text-wrap mb-0">Profesionalismo, transparencia, puntualidad, excelencia, innovación.</p>
+                </div>
+              </div>
+              <!-- End Media -->
+            </a>
+          </li>
+        </ul>
+        <!-- End Nav Pills -->
+      </div>
+      <!-- End Nav Scroller -->
+    </div>
+    <!-- End Col -->
+
+    <!-- Columna de la imagen (ahora a la derecha) -->
+    <div class="col-lg-6 order-lg-2">
+      <!-- Tab Content -->
+      <div class="tab-content" id="featuresTabContent">
+        <div class="tab-pane fade show active" id="featuresOne" role="tabpanel" aria-labelledby="featuresOne-tab">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-frame">
+              <img class="device-browser-img rounded-3" src="@@autopath/assets/img/nosotros/bkg0161.jpg" alt="Image Description">
+            </div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+
+        <div class="tab-pane fade" id="featuresTwo" role="tabpanel" aria-labelledby="featuresTwo-tab">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-frame">
+              <img class="device-browser-img rounded-3" src="@@autopath/assets/img/nosotros/bkg0161.jpg" alt="Image Description">
+            </div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+
+        <div class="tab-pane fade" id="featuresThree" role="tabpanel" aria-labelledby="featuresThree-tab">
+          <!-- Browser Device -->
+          <figure class="device-browser">
+            <div class="device-browser-frame">
+              <img class="device-browser-img rounded-3" src="@@autopath/assets/img/nosotros/bkg0161.jpg" alt="Image Description">
+            </div>
+          </figure>
+          <!-- End Browser Device -->
+        </div>
+      </div>
+      <!-- End Tab Content -->
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Row -->
+</div>
     <!-- Clients -->
     <div class="container content-space-2 content-space-b-lg-3">
       <!-- Heading -->
