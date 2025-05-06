@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Business | Front - Multipurpose Responsive Template</title>
+  <title>Traducción Digital | LIMAC</title>
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
   <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- CSS Front Template -->
   <!-- bundlecss:theme [.] ?v=1.0 -->
@@ -28,7 +29,7 @@
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-dark bg-primary"
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light"
           data-hs-header-options='{
             "fixMoment": 1000,
             "fixEffect": "slide"
@@ -61,7 +62,7 @@
                 <a id="demosMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle active" aria-current="page" href="#" role="button">Servicios</a>
 
                 <!-- Mega Menu -->
-                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="demosMegaMenu" style="min-width: 40rem;">
+                <div class="hs-mega-menu dropdown-menu w-100 mt-n5" aria-labelledby="demosMegaMenu" style="min-width: 40rem;">
                   <!-- Promo -->
                   <div class="row">
                     <div class="col-lg-6">
@@ -268,7 +269,7 @@
 
               <!-- Button -->
               <li class="nav-item">
-                <a class="btn btn-dark btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Iniciar Sesión</a>
+                <a class="btn btn-primary btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Iniciar Sesión</a>
               </li>
               <!-- End Button -->
             </ul>
@@ -282,7 +283,7 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-  
+
     <div class="d-lg-flex position-relative">
       <div class="container d-lg-flex align-items-lg-center content-space-t-3 content-space-lg-0 min-vh-lg-100">
         <!-- Heading -->
@@ -291,11 +292,11 @@
             <div class="col-lg-6">
               <div class="mb-5" data-aos="fade-left">
                 <h1 class="display-4 mb-3" >
-                  Traducciones digitales para todo tipo de documentos físicos o electrónicos
+                  Traducciones digitales para todo tipo de documentos
                   <span class="text-primary text-highlight-warning">
                     <span class="js-typedjs"
                           data-hs-typed-options='{
-                            "strings": ["startup.", "future.", "success."],
+                            "strings": ["físicos.", "electrónicos."],
                             "typeSpeed": 90,
                             "loop": true,
                             "backSpeed": 30,
@@ -710,7 +711,6 @@
 
     <!--Nexus - Segumiento-->
     <div class="container">
-
       <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
         <div class="col-md-6 order-md-2 mb-10 mb-md-0">
           <!-- Browser Device -->
@@ -741,7 +741,7 @@
           <div class="container content-space-t-2 ">
             <!-- Step -->
             <ul class="step step-md step-centered">
-              <li class="step-item">
+              <li class="step-item" data-aos="fade-right">
                 <div class="step-content-wrapper">
                   <span class="step-icon step-icon-soft-primary">1</span>
                   <div class="step-content">
@@ -750,7 +750,7 @@
                   </div>
                  </div>
               </li>
-              <li class="step-item">
+              <li class="step-item" data-aos="fade-right" data-aos-delay="100">
                 <div class="step-content-wrapper">
                   <span class="step-icon step-icon-soft-primary">2</span>
                   <div class="step-content">
@@ -759,7 +759,7 @@
                   </div>
                  </div>
               </li>
-              <li class="step-item">
+              <li class="step-item" data-aos="fade-right" data-aos-delay="150">
                 <div class="step-content-wrapper">
                   <span class="step-icon step-icon-soft-primary">3</span>
                   <div class="step-content">
@@ -769,8 +769,8 @@
                  </div>
               </li>
             </ul>
-            <a   class="btn btn-primary mt-5 mb-5 px-5 py-3 fs-4"   target="_blank"   href="./landing-classic-corporate.html" >  Empiece ahora <i class="bi-box-arrow-up-right ms-2 fs-4"></i></a>
-            <p class="pt-1 pb-3">Puede comunicarse con nosotros de Lunes a Viernes de 09:00 a 17:00 horas durante todo el proceso.</p>
+            <a   class="btn btn-primary mt-5 mb-5 px-5 py-3 fs-4" data-aos="fade-right" data-aos-delay="200"   target="_blank"   href="./landing-classic-corporate.html" >  Empiece ahora <i class="bi-box-arrow-up-right ms-2 fs-4"></i></a>
+            <p class="pt-1 pb-3" data-aos="fade-right" data-aos-delay="200">Puede comunicarse con nosotros de Lunes a Viernes de 09:00 a 17:00 horas durante todo el proceso.</p>
             <!-- End Step -->
           </div>
       </div>
@@ -1173,6 +1173,7 @@
   <!-- JS Plugins Init. -->
   <script>
     (function() {
+
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -1186,7 +1187,16 @@
           }
         })
 
-
+      document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.js-typedjs').forEach(function (el) {
+      try {
+        const options = JSON.parse(el.getAttribute('data-hs-typed-options'));
+        new Typed(el, options);
+      } catch (e) {
+        console.error('Typed.js: JSON inválido en data-hs-typed-options', e);
+      }
+      });
+      });
       // INITIALIZATION OF SHOW ANIMATIONS
       // =======================================================
       new HSShowAnimation('.js-animation-link')
@@ -1220,24 +1230,74 @@
       });
 
 
-      // INITIALIZATION OF TEXT ANIMATION (TYPING)
-      // =======================================================
-      HSCore.components.HSTyped.init('.js-typedjs')
-
-
       // INITIALIZATION OF SWIPER
       // =======================================================
+      let activeIndex = 0
       var sliderThumbs = new Swiper('.js-swiper-thumbs', {
+        slidesPerView: 1,
+        autoplay: false,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        history: false,
+        followFinger: false,
+        loop: true,
+        on: {
+          'slideChangeTransitionEnd': function (event) {
+            if (sliderMain === undefined) return
+            sliderMain.slideTo(event.activeIndex)
+          }
+        }
+      });
+
+      var sliderMain = new Swiper('.js-swiper-main', {
+        effect: 'fade',
+        autoplay: false,
+        disableOnInteraction: true,
+        loop: true,
+        navigation: {
+          nextEl: '.js-swiper-main-button-next',
+          prevEl: '.js-swiper-main-button-prev',
+        },
+        thumbs: {
+          swiper: sliderThumbs
+        },
+        on: {
+          'slideChangeTransitionEnd': function (event) {
+            if (sliderThumbs === undefined) return
+            sliderThumbs.slideTo(event.activeIndex)
+          }
+        }
+      })
+
+      // Clients
+      var swiper = new Swiper('.js-swiper-clients',{
+        slidesPerView: 2,
         breakpoints: {
-          480: {
-            slidesPerView: 2,
+          380: {
+            slidesPerView: 3,
             spaceBetween: 15,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+        },
+      });
+
+      // Card Grid
+      var swiper = new Swiper('.js-swiper-card-blocks',{
+        slidesPerView: 1,
+        pagination: {
+          el: '.js-swiper-card-blocks-pagination',
+          dynamicBullets: true,
+          clickable: true,
+        },
+        breakpoints: {
+          620: {
+            slidesPerView: 2,
             spaceBetween: 15,
           },
           1024: {
@@ -1245,22 +1305,7 @@
             spaceBetween: 15,
           },
         },
-        on: {
-          'afterInit': function (swiper) {
-            swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
-            .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
-          }
-        }
       });
-
-      var sliderMain = new Swiper('.js-swiper-main', {
-        effect: 'fade',
-        autoplay: true,
-        loop: true,
-        thumbs: {
-          swiper: sliderThumbs
-        }
-      })
     })()
   </script>
 </body>
