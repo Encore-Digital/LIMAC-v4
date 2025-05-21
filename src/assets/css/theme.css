@@ -213,7 +213,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--bs-heading-color);
+  color: var(--bs-body-color);
 }
 
 h1, .h1 {
@@ -21616,7 +21616,7 @@ label.form-control,
   box-shadow: 0rem 0.375rem 1.5rem 0rem rgba(140, 152, 164, 0.125);
 }
 .navbar.navbar-scrolled.navbar-dark {
-  background-color: #377dff;
+  background-color: #21325b;
 }
 
 .navbar-brand {
@@ -27006,25 +27006,74 @@ a:hover .text-inherit {
   margin-top: 0.5rem;
 }
 
-
-@media (max-width: 991px) {
-  .hs-mega-menu.dropdown-menu .row {
-    display: block !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-
-.logo_create{
-  font-size: 3.5em;
-  letter-spacing: -4.5px;
-  line-height: inherit;
-  text-shadow: 0px 2px 1px rgb(0 0 0 / 40%), 0px 4px 2px rgb(0 0 0 / 10%), 0px 6px 3px rgb(0 0 0 / 10%);
-  color: #377dff;
-  font-family: 'Maven Pro', sans-serif;
-}
-
-
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+.logo_create {
+  font-size: 3em;
+  letter-spacing: -4.5px;
+  line-height: inherit;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 4px 2px rgba(0, 0, 0, 0.1), 0px 6px 3px rgba(0, 0, 0, 0.1);
+  color: #377dff;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: 200%; /* porque duplicaste los logos */
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  width: 200px; /* o ajusta al tamaño de tu diseño */
+  padding: 0 20px;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animación */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+}
+
+/* 🔹 Por defecto (afecta a móviles y todos) */
+body.index-page .navbar .nav-link {
+  color: #677788 !important; /* gris visible sobre fondo blanco */
+}
+
+@media (min-width: 992px) {
+  body.index-page .navbar.navbar-transparent .nav-link {
+    color: rgb(206, 206, 206) !important;
+  }
+  body.index-page .navbar:not(.navbar-transparent) .nav-link {
+    color: #677788 !important;
+  }
+  body.index-page .navbar .nav-link:hover {
+    color: #377dff !important;
+  }
+}
